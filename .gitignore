@@ -1,0 +1,80 @@
+# Rust build artifacts
+/target/
+**/target/
+
+# Cargo lock file (optional - uncomment if this is a library)
+# Cargo.lock
+
+# Backup files
+*.bak
+*.orig
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Log files
+*.log
+logs/
+
+# Debug files
+*.pdb
+
+# Coverage reports
+*.profraw
+*.profdata
+coverage/
+lcov.info
+tarpaulin-report.html
+
+# Benchmark results
+criterion/
+
+# Documentation build output
+/doc/
+**/doc/
+
+# Rustfmt backup files
+*.rs.bk
+
+# SQLx offline query data (uncomment if not using offline mode)
+# .sqlx/
+
+# Test databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Package manager directories (if using any JS tooling)
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+secrets/
