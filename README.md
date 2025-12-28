@@ -1,5 +1,7 @@
 # Nocy Wallet Feed Sidecar
 
+> ⚠️ **Beta Software** — This project has been tested and is functional, but may require further modifications. Use in production at your own discretion.
+
 A unified wallet synchronization service for the Midnight blockchain that aggregates, transforms, and streams wallet-relevant data through a single REST/SSE API.
 
 ## Overview
@@ -29,13 +31,13 @@ The Nocy Wallet Feed Sidecar sits between wallet clients and the Midnight blockc
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         Clients (Wallets)                        │
+│                         Clients (Wallets)                       │
 └─────────────────────────────────────────────────────────────────┘
                                 │
                     REST API / SSE (port 8080)
                                 │
 ┌─────────────────────────────────────────────────────────────────┐
-│                    nocy-wallet-feed Sidecar                      │
+│                    nocy-wallet-feed Sidecar                     │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐  │
 │  │   Session   │  │    Feed     │  │        Zswap            │  │
 │  │  Management │  │  Streaming  │  │  (merkle, first-free)   │  │
